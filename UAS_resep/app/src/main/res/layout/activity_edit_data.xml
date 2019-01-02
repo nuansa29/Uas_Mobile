@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sss"
+    android:orientation="vertical"
+    tools:context="com.example.enji.uas_resep.EditData">
+
+    <TextView
+        android:id="@+id/text_id_resep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/transparent"
+        android:text="Edit Data"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editText_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_id_resep"
+        android:layout_marginTop="15dp"
+        android:background="#afffffff"
+        android:ems="10">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editText_bahan"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/editText_nama"
+        android:layout_marginTop="15dp"
+        android:background="#afffffff"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/editText_cara"
+        android:layout_width="match_parent"
+        android:layout_height="138dp"
+        android:layout_marginTop="21dp"
+        android:background="#afffffff"
+        android:ems="10"
+        android:layout_below="@+id/editText_bahan"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText_cara"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_save_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/text_id_resep"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/text_id_resep"
+        android:layout_marginBottom="21dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginRight="54dp"
+        android:background="@android:color/holo_orange_light"
+        android:text="Edit" />
+
+    <Button
+        android:id="@+id/button_cancel_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/text_id_resep"
+        android:layout_alignStart="@+id/text_id_resep"
+        android:layout_alignTop="@+id/button_save_update"
+        android:layout_marginLeft="54dp"
+        android:layout_marginStart="54dp"
+        android:background="@android:color/holo_orange_light"
+        android:text="cancel" />
+
+</RelativeLayout>
